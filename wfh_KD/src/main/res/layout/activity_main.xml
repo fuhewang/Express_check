@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#008cff"
+    android:id="@+id/main_top_rl"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="顺风快递"
+        android:background="#008cff"
+        android:id="@+id/compch_btn"
+        android:drawableRight="@drawable/item_btn_menu"
+        android:textColor="#ffffff"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/title_rl"
+    android:background="#ff0000">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rl_title"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_rl"
+    >
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/expressld_et"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/express_post_id"
+        android:textColor="#555"
+        />
+    <ImageButton
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/def_selector"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/speech_ib"
+        android:layout_toRightOf="@id/expressld_et"
+        android:layout_alignBottom="@id/expressld_et"
+        android:src="@drawable/icon_microphone"
+        android:scaleType="centerInside"
+        android:padding="3dp"
+        />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:id="@+id/search_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/expressld_et"
+        android:background="@drawable/serach_selector"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="5dp"
+        />
+</RelativeLayout>
+</LinearLayout>
